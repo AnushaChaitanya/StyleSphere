@@ -1,11 +1,14 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import './home.css'; // Optional: if you want page-level styling
 
 function Home() {
   return (
-    <div className="container mt-5">
-      <h1>Welcome to StyleSphere</h1>
-      <p>This is the Home Page!</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
 

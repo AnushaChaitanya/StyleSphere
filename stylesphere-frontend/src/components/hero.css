@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  height: 80vh;
+}
+
+.hero-left {
+  flex: 7;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-right {
+  flex: 3;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.hero-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-right p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-right button {
+  background: #ff6b5c;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 30px;
+  font-family: 'Lucida Calligraphy', cursive;
+  cursor: pointer;
+}
