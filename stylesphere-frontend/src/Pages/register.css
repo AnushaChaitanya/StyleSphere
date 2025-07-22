@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(-45deg, #ee7752, #43ffca, #ff5858, #f172ff);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.register-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 30px;
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #b32a2a;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #002244;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button {
+  font-family: 'Lucida Handwriting', 'Lucida Calligraphy', cursive;
+  font-style: italic;
+  background: #fa5a2a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #e14d20;
+}
+
+p {
+  margin-top: 15px;
+  text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(203, 46, 46);
+}
