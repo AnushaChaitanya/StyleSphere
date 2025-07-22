@@ -58,8 +58,9 @@
 }
 
 .nav-icon {
-  font-size: 28px; /* Bigger size */
+  font-size: 34px; /* Bigger size */
   cursor: pointer;
+  color: #d62815;
   transition: color 0.3s ease;
 }
 
@@ -79,5 +80,5 @@
 }
 
 .login-btn:hover {
-  background: #ff4c3b;
+  background: #d62815;
 }
