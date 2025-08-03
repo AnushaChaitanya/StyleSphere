@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import './home.css'; // Optional: if you want page-level styling
+import './CategorySection.jsx'; // ❌ This line is NOT correct!
+import './home.css'; // ✅ This is fine
 
 function Home() {
   return (

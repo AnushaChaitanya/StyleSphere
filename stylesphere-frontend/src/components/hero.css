@@ -1,16 +1,29 @@
 .hero {
   display: flex;
   height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-left {
   flex: 7;
+  position: relative;
 }
 
 .hero-left img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .hero-right {
@@ -25,11 +38,13 @@
 .hero-right h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  animation: fadeIn 1s ease;
 }
 
 .hero-right p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  animation: fadeIn 1s ease;
 }
 
 .hero-right button {
@@ -40,4 +55,15 @@
   border-radius: 30px;
   font-family: 'Lucida Calligraphy', cursive;
   cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hero-right button:hover {
+  transform: scale(1.05);
+  background: #ff503f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
