@@ -9,14 +9,7 @@ function Navbar() {
         <div className="navbar-logo">StyleSphere</div>
       </div>
 
-      <div className="navbar-center">
-        <div className="navbar-search">
-          <input type="text" placeholder="Search products..." />
-          <button type="button" className="search-btn">
-            <FaSearch />
-          </button>
-        </div>
-      </div>
+      
 
       <div className="navbar-right">
         <FaHeart className="nav-icon" />
